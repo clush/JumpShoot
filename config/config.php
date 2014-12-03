@@ -15,8 +15,8 @@
  */
 define("DB_HOST", "localhost");
 define("DB_NAME", "login");
-define("DB_USER", "root");
-define("DB_PASS", "Dr0p1t!");
+define("DB_USER", "USER");
+define("DB_PASS", "PASSWORT");
 
 /**
  * Configuration for: Cookies
@@ -35,7 +35,7 @@ define("DB_PASS", "Dr0p1t!");
  */
 define("COOKIE_RUNTIME", 1209600);
 define("COOKIE_DOMAIN", ".196.193.7.22");
-define("COOKIE_SECRET_KEY", "1gp@TMPS{+$78sfpMJFe-92s");
+define("COOKIE_SECRET_KEY", "SECRET");
 
 /**
  * Configuration for: Email server credentials
