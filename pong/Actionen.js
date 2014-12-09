@@ -2,25 +2,25 @@
 
 function action(){
 	//Steuerung linke Spielfigur
-	if(input.right){
+	if(input.d){
 		dir1=true;
-		if (x1+2>=width-42){
+		if (x1+speedX>=width-42){
 		x1=width-42;	
 		}else{
-		x1+=2;
+		x1+=speedX;
 		}
 	}
 	
-	if (input.left){
+	if (input.a){
 		dir1=false;
 		if (x1-2<=2){
-		x1= 2;
+		x1= speedX;
 		}else{
-		x1-=2;	
+		x1-=speedX;	
 		}
 		
 	}
-	if (input.up){
+	if (input.w){
 		if(!jumped1){
 			speedY1=24;
 			jumped1=true;
@@ -47,38 +47,40 @@ function action(){
 		}	
 	}
 	
-	if(input.down){
+	if(input.s){
 				
 	}
-	if(input.space){
+	if(input.shift){
 		if(!shoot1){	
 			shoot1=true;
 			direction1=dir1;
-			sx1 = x1+35;
 			sy1 = y1+15;
+			if (direction1)sx1 = x1+40;
+			else sx1=x1;
+			
 		}
 	}
 	
 	//Steuerung rechte Spielfigur
-	if(input.d){
+	if(input.right){
 		dir2=true;
-		if (x2+2>=width-42){
+		if (x2+speedX>=width-42){
 		x2=width-42;	
 		}else{
-		x2+=2;
+		x2+=speedX;
 		}
 	}
 	
-	if (input.a){
+	if (input.left){
 		dir2=false;
-		if (x2-2<=2){
+		if (x2-speedX<=2){
 		x2= 2;
 		}else{
-		x2-=2;	
+		x2-=speedX;	
 		}
 		
 	}
-	if (input.w){
+	if (input.up){
 		if(!jumped2){
 			speedY2=24;
 			jumped2=true;
@@ -105,16 +107,17 @@ function action(){
 		}	
 	}
 	
-	if(input.s){
+	if(input.down){
 				
 	}
 	
-	if(input.eins){
+	if(input.space){
 		if(!shoot2){	
 			shoot2=true;
 			direction2=dir2;
-			sx2 = x2+35;
 			sy2 = y2+15;
+			if (direction2)sx2 = x2+40;
+			else sx2=x2;
 		}	
 	}
 	

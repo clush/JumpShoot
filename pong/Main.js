@@ -4,6 +4,8 @@ ctx = Canvas.getContext("2d");
 
 width= 800;
 height= 500;
+speedX=4;
+bulletspeed=10;
 
 x1=40;
 y1=height-81;

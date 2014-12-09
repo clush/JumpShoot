@@ -10,9 +10,9 @@ function draw () {
 	if(timer1<100){
 		timer1++;
 		if (direction1){
-			sx1+=5;	
+			sx1+=bulletspeed;	
 		}else{
-			sx1-=5;
+			sx1-=bulletspeed;
 		}	
 		ctx.fillStyle ="#0000ff";
 		ctx.fillRect(sx1,sy1, 5, 5);
@@ -27,9 +27,9 @@ function draw () {
 	if(timer2<100){
 		timer2++;
 		if (direction2){
-			sx2+=5;	
+			sx2+=bulletspeed;	
 		}else{
-			sx2-=5;
+			sx2-=bulletspeed;
 		}	
 		ctx.fillStyle ="#0000ff";
 		ctx.fillRect(sx2,sy2, 5, 5);

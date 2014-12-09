@@ -49,8 +49,8 @@ function Input(){
 		case 87:
 			this.space = bool;
 			break;
-		case 49:
-			this.eins = bool;
+		case 16:
+			this.shift = bool;
 			break;
 		}
 	};
