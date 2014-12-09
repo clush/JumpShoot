@@ -20,7 +20,7 @@ function action(){
 		}
 		
 	}
-	if (input.w){
+	if (input.d){
 		if(!jumped1){
 			speedY1=24;
 			jumped1=true;
