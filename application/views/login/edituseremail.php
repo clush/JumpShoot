@@ -7,6 +7,6 @@
     <form action="<?php echo URL; ?>login/edituseremail_action" method="post">
         <label>New email adress:</label>
         <input type="text" name="user_email" required />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" name="submit" />
     </form>
 </div>

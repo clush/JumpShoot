@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JUMP-SHOOT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://jump-shoot.it.dh-karlsruhe.de/public/css/reset.css" />
+    <link rel="stylesheet" href="http://jump-shoot.it.dh-karlsruhe.de/public/css/style.css" />
+    <!-- in case you wonder: That's the cool-kids-protocol-free way to load jQuery -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="http://jump-shoot.it.dh-karlsruhe.de/public/js/application.js"></script>
+</head>
+<body>
+
+    <div class='title-box'>
+        <a href="http://jump-shoot.it.dh-karlsruhe.de/">JUMP-SHOOT</a>
+    </div>
+
+    <div class="header">
+        <div class="header_left_box">
+        <ul id="menu">
+
+            
+            <!-- for not logged in users -->
+                            <li  class="active"  >
+                    <a href="http://jump-shoot.it.dh-karlsruhe.de/login/index">Login</a>
+                </li>
+                <li  >
+                    <a href="http://jump-shoot.it.dh-karlsruhe.de/login/register">Register</a>
+                </li>
+                    </ul>
+        </div>
+
+        
+        <div class="clear-both"></div>
+    </div>
+<div class="content">
+
+    <!-- echo out the system feedback (error and success messages) -->
+    <div class="feedback error">Password field was empty.</div>
+    <div class="login-default-box">
+        <h1>Login</h1>
+        <form action="http://jump-shoot.it.dh-karlsruhe.de/login/login" method="post">
+                <label>Username (or email)</label>
+                <input type="text" name="user_name" required />
+                <label>Password</label>
+                <input type="password" name="user_password" required />
+                <input type="checkbox" name="user_rememberme" class="remember-me-checkbox" />
+                <label class="remember-me-label">Keep me logged in (for 2 weeks)</label>
+                <input type="submit" class="login-submit-button" name="submit" />
+        </form>
+        <a href="http://jump-shoot.it.dh-karlsruhe.de/login/register">Register</a>
+        |
+        <a href="http://jump-shoot.it.dh-karlsruhe.de/login/requestpasswordreset">Forgot my Password</a>
+    </div>
+
+    
+</div>
+    <div class="footer">
+        <!-- echo out the content of the SESSION via KINT, a Composer-loaded much better version of var_dump -->
+        <!-- KINT can be used with the simple function d() -->
+    </div>
+</body>
+</html>
