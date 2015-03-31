@@ -3,7 +3,7 @@
 function action(){
 	//Steuerung linke Spielfigur bla bla hallo
 	if(input.d){
-		dir1=true;
+		dir1=true
 		if (x1+speedX>=width-42){
 		x1=width-42;	
 		}else{
