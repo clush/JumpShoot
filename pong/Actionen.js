@@ -1,9 +1,9 @@
 
 
 function action(){
-	//Steuerung linke Spielfigur bla bla hallo
+	//Steuerung linke Spielfigur
 	if(input.d){
-		dir1=true
+		dir1=true;
 		if (x1+speedX>=width-42){
 		x1=width-42;	
 		}else{
@@ -20,7 +20,7 @@ function action(){
 		}
 		
 	}
-	if (input.d){
+	if (input.w){
 		if(!jumped1){
 			speedY1=24;
 			jumped1=true;
