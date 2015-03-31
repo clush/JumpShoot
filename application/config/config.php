@@ -93,7 +93,11 @@ define('COOKIE_DOMAIN', '.jump-shoot.it.dh-karlsruhe.de');
 define('DB_TYPE', 'mysql');
 define('DB_HOST', '127.0.0.1');
 define('DB_NAME', 'login');
+<<<<<<< HEAD
 define('DB_USER', '');
+=======
+define('DB_USER', 'root');
+>>>>>>> origin/master
 define('DB_PASS', '');
 
 /**

@@ -7,6 +7,10 @@
     <form action="<?php echo URL; ?>login/editusername_action" method="post">
         <label>New username</label>
         <input type="text" name="user_name" required />
+<<<<<<< HEAD
         <input type="submit" value="Submit" name="submit" />
+=======
+        <input type="submit" value="Submit" />
+>>>>>>> origin/master
     </form>
 </div>

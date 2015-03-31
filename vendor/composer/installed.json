@@ -148,6 +148,7 @@
             }
         ],
         "description": "PHPMailer is a full-featured email creation and transfer class for PHP"
+<<<<<<< HEAD
     },
     {
         "name": "sebastian/version",
@@ -919,5 +920,7 @@
             "testing",
             "xunit"
         ]
+=======
+>>>>>>> origin/master
     }
 ]

@@ -7,7 +7,11 @@ function draw () {
 	
 	
 	if (shoot1){
+<<<<<<< HEAD
 	if(timer1<100){
+=======
+	if(timer1<96){
+>>>>>>> origin/master
 		timer1++;
 		if (direction1){
 			sx1+=bulletspeed;	

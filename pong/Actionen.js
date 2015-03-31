@@ -1,7 +1,11 @@
 
 
 function action(){
+<<<<<<< HEAD
 	//Steuerung linke Spielfigur
+=======
+	//Steuerung linke Spielfigur test
+>>>>>>> origin/master
 	if(input.d){
 		dir1=true;
 		if (x1+speedX>=width-42){
@@ -20,7 +24,11 @@ function action(){
 		}
 		
 	}
+<<<<<<< HEAD
 	if (input.w){
+=======
+	if (input.d){
+>>>>>>> origin/master
 		if(!jumped1){
 			speedY1=24;
 			jumped1=true;
