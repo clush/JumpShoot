@@ -1,7 +1,7 @@
 
 
 function action(){
-	//Steuerung linke Spielfigur test2
+	//Steuerung linke Spielfigur test234345
 	if(input.d){
 		dir1=true;
 		if (x1+speedX>=width-42){
