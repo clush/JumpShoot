@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JUMP-SHOOT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://jump-shoot.it.dh-karlsruhe.de/public/css/reset.css" />
+    <link rel="stylesheet" href="http://jump-shoot.it.dh-karlsruhe.de/public/css/style.css" />
+    <!-- in case you wonder: That's the cool-kids-protocol-free way to load jQuery -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="http://jump-shoot.it.dh-karlsruhe.de/public/js/application.js"></script>
+</head>
+<body>
+
+    <div class='title-box'>
+        <a href="http://jump-shoot.it.dh-karlsruhe.de/">JUMP-SHOOT</a>
+    </div>
+
+    <div class="header">
+        <div class="header_left_box">
+        <ul id="menu">
+
+                                                <li  >
+                        <a href="http://jump-shoot.it.dh-karlsruhe.de/dashboard/index">Dashboard</a>
+                    </li>
+                                <li  class="active"  >
+                    <a href="http://jump-shoot.it.dh-karlsruhe.de/login/showprofile">My Account</a>
+                    <ul class="sub-menu">
+                        <li  class="active"  >
+                            <a href="http://jump-shoot.it.dh-karlsruhe.de/login/uploadavatar">Upload an avatar</a>
+                        </li>
+                        <li  class="active"  >
+                            <a href="http://jump-shoot.it.dh-karlsruhe.de/login/editusername">Edit my username</a>
+                        </li>
+                        <li  class="active"  >
+                            <a href="http://jump-shoot.it.dh-karlsruhe.de/login/edituseremail">Edit my email</a>
+                        </li>
+                        <li  class="active"  >
+                            <a href="http://jump-shoot.it.dh-karlsruhe.de/login/logout">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            
+            <!-- for not logged in users -->
+                    </ul>
+        </div>
+
+                    <div class="header_right_box">
+                <div class="namebox">
+                    Hello Max !
+                </div>
+                <div class="avatar">
+                                            <img src='http://jump-shoot.it.dh-karlsruhe.de/public/avatars/default.jpg'
+                             style='width:44px; height:44px;' />
+                                    </div>
+            </div>
+        
+        <div class="clear-both"></div>
+    </div>
+<div class="content">
+    <h1>Change your email adress</h1>
+
+    <!-- echo out the system feedback (error and success messages) -->
+    
+    <form action="http://jump-shoot.it.dh-karlsruhe.de/login/edituseremail_action" method="post">
+        <label>New email adress:</label>
+        <input type="text" name="user_email" required />
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+    <div class="footer">
+        <!-- echo out the content of the SESSION via KINT, a Composer-loaded much better version of var_dump -->
+        <!-- KINT can be used with the simple function d() -->
+    </div>
+</body>
+</html>
