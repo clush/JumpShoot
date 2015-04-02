@@ -60,11 +60,7 @@ this.jump = function(){
 
 this.shoot = function(){
 				
-		if(this.kugel.richtung)this.kugel.x += this.kugel.speed;
-		else this.kugel.x -= this.kugel.speed;
-	
-		ctx.fillStyle =this.kugel.color;
-		ctx.fillRect(this.kugel.x,this.kugel.y, 5, 5);
+		this.kugel.fly();
 }
 
 this.draw = function() {

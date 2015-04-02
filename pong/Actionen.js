@@ -27,8 +27,9 @@ function action(){
 	if(input.shift){
 		Spieler1.shooting=true;
 		Spieler1.kugel.richtung=Spieler1.blickrichtung;
-		Spieler1.kugel.x=Spieler1.x;
-		Spieler1.kugel.y=Spieler1.y +15;
+        if(Spieler1.kugel.richtung)Spieler1.kugel.x=Spieler1.x +Spieler1.playerwidth+1;
+        else Spieler1.kugel.x=Spieler1.x -Spieler1.playerwidth+1;
+		Spieler1.kugel.y=Spieler1.y+15;
 	}
 	
 	if(Spieler1.shooting){
@@ -63,7 +64,8 @@ function action(){
 	if(input.space){
 		Spieler2.shooting=true;
 		Spieler2.kugel.richtung=Spieler2.blickrichtung;
-		Spieler2.kugel.x=Spieler2.x;
+        if(Spieler2.kugel.richtung)Spieler2.kugel.x=Spieler2.x +Spieler2.playerwidth+1;
+        else Spieler2.kugel.x=Spieler2.x -Spieler2.playerwidth+1;
 		Spieler2.kugel.y=Spieler2.y +15;
 	}
 	
