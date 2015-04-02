@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baca6cc2-ce4a-4e81-9e18-21ad3ecc7cac" name="Default" comment="JUMP-27 Spielfigur einbinden - Teil 1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pong/Spielende1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pong/Spielende2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/Actionen.js" afterPath="$PROJECT_DIR$/pong/Actionen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/Kugeln.js" afterPath="$PROJECT_DIR$/pong/Kugeln.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/Spielfigur.js" afterPath="$PROJECT_DIR$/pong/Spielfigur.js" />
+    <list default="true" id="baca6cc2-ce4a-4e81-9e18-21ad3ecc7cac" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JumpShoot.iws" />
@@ -306,7 +301,7 @@
       <option name="issue" value="true" />
       <option name="number" value="27" />
       <option name="project" value="JUMP" />
-      <updated>1427794964055</updated>
+      <updated>1427990423602</updated>
     </task>
     <task id="LOCAL-00002">
       <branch name="master" repository="C:\Users\Claus\Documents\GitHub\JumpShoot" />
@@ -366,7 +361,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34582624" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
