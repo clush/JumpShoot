@@ -1,126 +1,74 @@
 
 
 function action(){
-	//Steuerung linke Spielfigur
+	
+	//Spieler 1
+	
 	if(input.d){
-		dir1=true;
-		if (x1+speedX>=width-42){
-		x1=width-42;	
-		}else{
-		x1+=speedX;
-		}
+		Spieler1.moveRight();
 	}
 	
 	if (input.a){
-		dir1=false;
-		if (x1-2<=2){
-		x1= speedX;
-		}else{
-		x1-=speedX;	
-		}
-		
+		Spieler1.moveLeft();		
 	}
+	
 	if (input.w){
-		if(!jumped1){
-			speedY1=24;
-			jumped1=true;
-			increase1=true;
-		}	
+		if(!Spieler1.jumped){
+		Spieler1.jumpSpeed=6*Spieler1.speed;
+		Spieler1.jumped=true;
+		Spieler1.increase=true;
+		}
 	}
 	
-	if (jumped1){
-		if (increase1){
-			if (speedY1==0){
-				increase1=false;
-			}
-			else{
-			y1-=speedY1;
-			speedY1--;
-			}	
-		}else if ((y1 + speedY1) >= (height -81)){
-			y1 = height-81;
-			jumped1 = false;
-			speedY1 = 0;
-		}else {
-			y1+=speedY1;
-			speedY1++;
-		}	
+	if(Spieler1.jumped){
+		Spieler1.jump();
 	}
 	
-	if(input.s){
-				
-	}
 	if(input.shift){
-		if(!shoot1){	
-			shoot1=true;
-			direction1=dir1;
-			sy1 = y1+15;
-			if (direction1)sx1 = x1+40;
-			else sx1=x1;
-			
-		}
+		Spieler1.shooting=true;
+		Spieler1.kugel.richtung=Spieler1.blickrichtung;
+		Spieler1.kugel.x=Spieler1.x;
+		Spieler1.kugel.y=Spieler1.y +15;
 	}
 	
-	//Steuerung rechte Spielfigur
-	if(input.right){
-		dir2=true;
-		if (x2+speedX>=width-42){
-		x2=width-42;	
-		}else{
-		x2+=speedX;
-		}
+	if(Spieler1.shooting){
+		Spieler1.shoot();
 	}
+	
+	
+	
+	
+	//Spieler 2
+	
+	if(input.right){
+		Spieler2.moveRight();
+	}	
 	
 	if (input.left){
-		dir2=false;
-		if (x2-speedX<=2){
-		x2= 2;
-		}else{
-		x2-=speedX;	
-		}
-		
+		Spieler2.moveLeft();		
 	}
+	
 	if (input.up){
-		if(!jumped2){
-			speedY2=24;
-			jumped2=true;
-			increase2=true;
-		}	
+		if(!Spieler2.jumped){
+		Spieler2.jumpSpeed=6*Spieler1.speed;
+		Spieler2.jumped=true;
+		Spieler2.increase=true;
+		}
 	}
 	
-	if (jumped2){
-		if (increase2){
-			if (speedY2==0){
-				increase2=false;
-			}
-			else{
-			y2-=speedY2;
-			speedY2--;
-			}	
-		}else if ((y2 + speedY2) >= (height -81)){
-			y2 = height-81;
-			jumped2 = false;
-			speedY2 = 0;
-		}else {
-			y2+=speedY2;
-			speedY2++;
-		}	
-	}
-	
-	if(input.down){
-				
+	if(Spieler2.jumped){
+		Spieler2.jump();
 	}
 	
 	if(input.space){
-		if(!shoot2){	
-			shoot2=true;
-			direction2=dir2;
-			sy2 = y2+15;
-			if (direction2)sx2 = x2+40;
-			else sx2=x2;
-		}	
+		Spieler2.shooting=true;
+		Spieler2.kugel.richtung=Spieler2.blickrichtung;
+		Spieler2.kugel.x=Spieler2.x;
+		Spieler2.kugel.y=Spieler2.y +15;
 	}
 	
+	if(Spieler2.shooting){
+		Spieler2.shoot();
+	}
 	
-
 }
