@@ -26,6 +26,7 @@ function action(){
 	
 	if(input.shift){
 		Spieler1.shooting=true;
+        sound();
 		Spieler1.kugel.richtung=Spieler1.blickrichtung;
         if(Spieler1.kugel.richtung)Spieler1.kugel.x=Spieler1.x +Spieler1.playerwidth+1;
         else Spieler1.kugel.x=Spieler1.x -Spieler1.playerwidth+1;
@@ -63,6 +64,7 @@ function action(){
 	
 	if(input.space){
 		Spieler2.shooting=true;
+        sound();
 		Spieler2.kugel.richtung=Spieler2.blickrichtung;
         if(Spieler2.kugel.richtung)Spieler2.kugel.x=Spieler2.x +Spieler2.playerwidth+1;
         else Spieler2.kugel.x=Spieler2.x -Spieler2.playerwidth+1;

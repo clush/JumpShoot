@@ -25,13 +25,27 @@ function kugel(color){
         if (this.x>=Spieler2.x && this.x<=Spieler2.x+Spieler2.playerwidth &&
             this.y>=Spieler2.y && this.y<=Spieler2.y+Spieler2.playerheight ){
             Spieler1.shooting=false;
-            window.location.replace("../pong/Spielende1.html");
+           // window.location.replace("../pong/Spielende1.html");
+            treffer();
+            if(confirm('Spieler 1 gewinnt, erneut spielen?')){
+                window.location.replace("../pong/index.html");
+            }
+            else{
+                window.location.replace("../index.php");
+            }
         }
 
         if (this.x>=Spieler1.x && this.x<=Spieler1.x+Spieler1.playerwidth &&
             this.y>=Spieler1.y && this.y<=Spieler1.y+Spieler1.playerheight ){
             Spieler2.shooting=false;
-            window.location.replace("../pong/Spielende2.html");
+            //window.location.replace("../pong/Spielende2.html");
+            treffer();
+            if(confirm('Spieler 2 gewinnt, erneut spielen?')){
+                window.location.replace("../pong/index.html");
+            }
+            else{
+                window.location.replace("../index.php");
+            }
         }
 
     }
