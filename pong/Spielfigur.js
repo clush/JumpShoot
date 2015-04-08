@@ -7,6 +7,7 @@ this.blickrichtung = blickrichtung; // true = schaut zu Beginn nach rechts
 this.color=color;
 this.playerheight=playerheight;
 this.playerwidth=playerwidth;
+this.livebar= new livebar(this.blickrichtung);
 
 this.jumped=false;
 this.increase=false;
@@ -64,6 +65,10 @@ this.shoot = function(){
 }
 
 this.draw = function() {
+
+    ctx.fillStyle ="#ff0000";
+    ctx.fillRect(this.livebar.x,this.livebar.y, this.livebar.length,10);
+
 	ctx.fillStyle =this.color;
 	ctx.fillRect(this.x,this.y, this.playerwidth,this.playerheight);
 }

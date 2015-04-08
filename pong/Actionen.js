@@ -25,12 +25,9 @@ function action(){
 	}
 	
 	if(input.shift){
-		Spieler1.shooting=true;
+        Spieler1.kugel.init(true);
+        Spieler1.shooting=true;
         sound();
-		Spieler1.kugel.richtung=Spieler1.blickrichtung;
-        if(Spieler1.kugel.richtung)Spieler1.kugel.x=Spieler1.x +Spieler1.playerwidth+1;
-        else Spieler1.kugel.x=Spieler1.x -Spieler1.playerwidth+1;
-		Spieler1.kugel.y=Spieler1.y+15;
 	}
 	
 	if(Spieler1.shooting){
@@ -39,7 +36,7 @@ function action(){
 	
 	
 	
-	
+
 	//Spieler 2
 	
 	if(input.right){
@@ -63,12 +60,9 @@ function action(){
 	}
 	
 	if(input.space){
-		Spieler2.shooting=true;
+        Spieler2.kugel.init(false);
+        Spieler2.shooting=true;
         sound();
-		Spieler2.kugel.richtung=Spieler2.blickrichtung;
-        if(Spieler2.kugel.richtung)Spieler2.kugel.x=Spieler2.x +Spieler2.playerwidth+1;
-        else Spieler2.kugel.x=Spieler2.x -Spieler2.playerwidth+1;
-		Spieler2.kugel.y=Spieler2.y +15;
 	}
 	
 	if(Spieler2.shooting){
