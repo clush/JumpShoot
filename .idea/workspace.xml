@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baca6cc2-ce4a-4e81-9e18-21ad3ecc7cac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pong/Livebar.js" />
-      <change type="MOVED" beforePath="C:\Users\Claus\Documents\GitHub\JumpShoot\pong\back.wav" afterPath="$PROJECT_DIR$/pong/Sounds/back.wav" />
-      <change type="MOVED" beforePath="C:\Users\Claus\Documents\GitHub\JumpShoot\pong\hit.wav" afterPath="$PROJECT_DIR$/pong/Sounds/hit.wav" />
-      <change type="MOVED" beforePath="C:\Users\Claus\Documents\GitHub\JumpShoot\pong\laser.wav" afterPath="$PROJECT_DIR$/pong/Sounds/laser.wav" />
+    <list id="baca6cc2-ce4a-4e81-9e18-21ad3ecc7cac" name="Default" comment="" />
+    <list default="true" id="9638967b-1c08-463c-95b3-603b46db0c7e" name="JUMP-26 Kugeln abeuern" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/Actionen.js" afterPath="$PROJECT_DIR$/pong/Actionen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/Draw.js" afterPath="$PROJECT_DIR$/pong/Draw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/Input.js" afterPath="$PROJECT_DIR$/pong/Input.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/Kugeln.js" afterPath="$PROJECT_DIR$/pong/Kugeln.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/Livebar.js" afterPath="$PROJECT_DIR$/pong/Livebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/Main.js" afterPath="$PROJECT_DIR$/pong/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/Sounds.js" afterPath="$PROJECT_DIR$/pong/Sounds.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/Spielfigur.js" afterPath="$PROJECT_DIR$/pong/Spielfigur.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong/index.html" afterPath="$PROJECT_DIR$/pong/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -42,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Kugeln.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Kugeln.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/Kugeln.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9741936" vertical-offset="1007" max-vertical-offset="1632">
-              <caret line="77" column="68" selection-start-line="77" selection-start-column="68" selection-end-line="77" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
+              <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -55,18 +57,18 @@
       <file leaf-file-name="Actionen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/Actionen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="877" max-vertical-offset="1326">
-              <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1343">
+              <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spielfigur.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Spielfigur.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pong/Spielfigur.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1411">
-              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.33452594" vertical-offset="0" max-vertical-offset="2873">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -75,11 +77,9 @@
       <file leaf-file-name="Livebar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/Livebar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="306">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="n#!!doc;n#livebar#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,8 +87,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="697">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="680">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -97,7 +97,7 @@
       <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="510">
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="544">
               <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding />
             </state>
@@ -107,8 +107,8 @@
       <file leaf-file-name="Draw.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/Draw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="255">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="238">
+              <caret line="2" column="38" selection-start-line="1" selection-start-column="4" selection-end-line="2" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -135,22 +135,17 @@
     </option>
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/views/dashboard/index.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/application/config/config.php" />
-        <option value="$PROJECT_DIR$/pong/Spielende.html" />
-        <option value="$PROJECT_DIR$/pong/Kollision.js" />
-        <option value="$PROJECT_DIR$/pong/Spielende2.html" />
-        <option value="$PROJECT_DIR$/pong/Main.js" />
-        <option value="$PROJECT_DIR$/pong/Actionen.js" />
-        <option value="$PROJECT_DIR$/pong/index.html" />
-        <option value="$PROJECT_DIR$/pong/Spielfigur.js" />
-        <option value="$PROJECT_DIR$/pong/Livebar.js" />
         <option value="$PROJECT_DIR$/pong/Kugeln.js" />
+        <option value="$PROJECT_DIR$/pong/Livebar.js" />
+        <option value="$PROJECT_DIR$/pong/Actionen.js" />
+        <option value="$PROJECT_DIR$/pong/Spielfigur.js" />
       </list>
     </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
     <include_path>
@@ -253,6 +248,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript 1.5" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -281,7 +277,8 @@
       <node-options />
       <gulpfile />
       <tasks />
-      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
     </configuration>
@@ -292,12 +289,12 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
+    <task id="Default" summary="Default task">
       <branch name="master" repository="C:\Users\Claus\Documents\GitHub\JumpShoot" />
       <changelist id="baca6cc2-ce4a-4e81-9e18-21ad3ecc7cac" name="Default" comment="" />
       <created>1418121519081</created>
       <option name="number" value="Default" />
-      <updated>1428495969188</updated>
+      <updated>1428496950661</updated>
     </task>
     <task id="JUMP-32" summary="Kollisionserkennung">
       <branch name="master" repository="C:\Users\Claus\Documents\GitHub\JumpShoot" original="true" />
@@ -307,17 +304,26 @@
       <option name="issue" value="true" />
       <option name="number" value="32" />
       <option name="project" value="JUMP" />
-      <updated>1428486006578</updated>
+      <updated>1428496033357</updated>
     </task>
     <task id="JUMP-33" summary="Gesundheitssystem">
       <branch name="master" repository="C:\Users\Claus\Documents\GitHub\JumpShoot" original="true" />
       <branch name="JUMP-33" repository="C:\Users\Claus\Documents\GitHub\JumpShoot" />
-      <changelist id="" name="JUMP-33 Gesundheitssystem" comment="" />
       <created>1416571500000</created>
       <option name="issue" value="true" />
       <option name="number" value="33" />
       <option name="project" value="JUMP" />
       <updated>1428495968953</updated>
+    </task>
+    <task active="true" id="JUMP-26" summary="Kugeln abeuern">
+      <branch name="master" repository="C:\Users\Claus\Documents\GitHub\JumpShoot" original="true" />
+      <branch name="JUMP-26" repository="C:\Users\Claus\Documents\GitHub\JumpShoot" />
+      <changelist id="9638967b-1c08-463c-95b3-603b46db0c7e" name="JUMP-26 Kugeln abeuern" comment="" />
+      <created>1416570861000</created>
+      <option name="issue" value="true" />
+      <option name="number" value="26" />
+      <option name="project" value="JUMP" />
+      <updated>1428497347000</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <option name="commitChanges" value="false" />
@@ -331,7 +337,7 @@
         <option name="loginAnonymously" value="false" />
         <option name="searchQuery" value="assignee = currentUser() and resolution = Unresolved order by updated" />
         <option name="shouldFormatCommitMessage" value="false" />
-        <option name="useHttpAuthentication" value="false" />
+        <option name="useHttpAuthentication" value="true" />
         <option name="useProxy" value="false" />
         <username>claus</username>
       </JIRA>
@@ -361,16 +367,16 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4020443" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4020443" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23298033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24054463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -400,7 +406,8 @@
     </option>
     <MESSAGE value="test commit" />
     <MESSAGE value="JUMP-27 Spielfigur einbinden - Teil 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="JUMP-27 Spielfigur einbinden - Teil 1" />
+    <MESSAGE value="JUMP-32_Kollisionserkennung" />
+    <option name="LAST_COMMIT_MESSAGE" value="JUMP-32_Kollisionserkennung" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -443,7 +450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="306">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -459,7 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
           <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -507,7 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="306">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -523,7 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -571,7 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="306">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3707165" vertical-offset="0" max-vertical-offset="321">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,68 +744,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.635514" vertical-offset="0" max-vertical-offset="321">
           <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pong/Kugeln.js">
+    <entry file="file://$PROJECT_DIR$/pong/Draw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9741936" vertical-offset="1007" max-vertical-offset="1632">
-          <caret line="77" column="68" selection-start-line="77" selection-start-column="68" selection-end-line="77" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pong/Actionen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="877" max-vertical-offset="1326">
-          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pong/Spielfigur.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1411">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pong/Livebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="306">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc;n#livebar#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pong/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="697">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="238">
+          <caret line="2" column="38" selection-start-line="1" selection-start-column="4" selection-end-line="2" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pong/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="510">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="544">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pong/Draw.js">
+    <entry file="file://$PROJECT_DIR$/pong/Kugeln.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="255">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
+          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/Livebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="680">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/Actionen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1343">
+          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/Spielfigur.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33452594" vertical-offset="0" max-vertical-offset="2873">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-
