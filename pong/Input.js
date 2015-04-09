@@ -42,7 +42,7 @@ function Input() {
                 this.d = bool;
                 break;
 
-            case 32:
+            case 17:
                 this.space = bool;
                 break;
 
