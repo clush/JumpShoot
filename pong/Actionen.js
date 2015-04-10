@@ -1,78 +1,73 @@
+function action() {
+
+    //Spieler 1
+
+    if (input.d) {
+        Spieler1.moveRight();
+    }
+
+    if (input.a) {
+        Spieler1.moveLeft();
+    }
+
+    if (input.w) {
+        if (!Spieler1.jumped) {
+            Spieler1.jumpSpeed = Spieler1.jumpheight;
+            Spieler1.jumped = true;
+            Spieler1.increase = true;
+        }
+    }
 
 
-function action(){
-	
-	//Spieler 1
-	
-	if(input.d){
-		Spieler1.moveRight();
-	}
-	
-	if (input.a){
-		Spieler1.moveLeft();		
-	}
-	
-	if (input.w){
-		if(!Spieler1.jumped){
-		Spieler1.jumpSpeed=6*Spieler1.speed;
-		Spieler1.jumped=true;
-		Spieler1.increase=true;
-		}
-	}
-	
-	if(Spieler1.jumped){
-		Spieler1.jump();
-	}
-	
-	if(input.shift){
-		Spieler1.shooting=true;
-        sound();
-		Spieler1.kugel.richtung=Spieler1.blickrichtung;
-        if(Spieler1.kugel.richtung)Spieler1.kugel.x=Spieler1.x +Spieler1.playerwidth+1;
-        else Spieler1.kugel.x=Spieler1.x -Spieler1.playerwidth+1;
-		Spieler1.kugel.y=Spieler1.y+15;
-	}
-	
-	if(Spieler1.shooting){
-		Spieler1.shoot();
-	}
-	
-	
-	
-	
-	//Spieler 2
-	
-	if(input.right){
-		Spieler2.moveRight();
-	}	
-	
-	if (input.left){
-		Spieler2.moveLeft();		
-	}
-	
-	if (input.up){
-		if(!Spieler2.jumped){
-		Spieler2.jumpSpeed=6*Spieler1.speed;
-		Spieler2.jumped=true;
-		Spieler2.increase=true;
-		}
-	}
-	
-	if(Spieler2.jumped){
-		Spieler2.jump();
-	}
-	
-	if(input.space){
-		Spieler2.shooting=true;
-        sound();
-		Spieler2.kugel.richtung=Spieler2.blickrichtung;
-        if(Spieler2.kugel.richtung)Spieler2.kugel.x=Spieler2.x +Spieler2.playerwidth+1;
-        else Spieler2.kugel.x=Spieler2.x -Spieler2.playerwidth+1;
-		Spieler2.kugel.y=Spieler2.y +15;
-	}
-	
-	if(Spieler2.shooting){
-		Spieler2.shoot();
-	}
-	
+    if (input.shift) {
+
+        if (Spieler1.timer == 0 && !Spieler1.keypressed) {
+            Spieler1.kugelnummer++;
+            Spieler1.shooting = true;
+            Spieler1.keypressed = true;
+
+            if (Spieler1.kugelnummer == 1)Spieler1.kugel1.init();
+            if (Spieler1.kugelnummer == 2)Spieler1.kugel2.init();
+            if (Spieler1.kugelnummer == 3)Spieler1.kugel3.init();
+            if (Spieler1.kugelnummer == 4)Spieler1.kugel4.init();
+
+        }
+    } else Spieler1.keypressed = false;
+
+
+    //Spieler 2
+
+    if (input.right) {
+        Spieler2.moveRight();
+    }
+
+    if (input.left) {
+        Spieler2.moveLeft();
+    }
+
+    if (input.up) {
+        if (!Spieler2.jumped) {
+            Spieler2.jumpSpeed = Spieler2.jumpheight;
+            Spieler2.jumped = true;
+            Spieler2.increase = true;
+        }
+    }
+
+
+    if (input.space) {
+
+        if (Spieler2.timer == 0 && !Spieler2.keypressed) {
+            Spieler2.kugelnummer++;
+            Spieler2.shooting = true;
+            Spieler2.keypressed = true;
+
+            if (Spieler2.kugelnummer == 1)Spieler2.kugel1.init();
+            if (Spieler2.kugelnummer == 2)Spieler2.kugel2.init();
+            if (Spieler2.kugelnummer == 3)Spieler2.kugel3.init();
+            if (Spieler2.kugelnummer == 4)Spieler2.kugel4.init();
+
+        }
+    } else Spieler2.keypressed = false;
+
+
 }
