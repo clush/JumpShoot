@@ -1,10 +1,10 @@
 server: http://localhost:4224
 
 load:
-  - ../*.js
+  - pong/*.js
 
 test:
-  - ./*.js
+  - JSTests/*.js
 
 exclude:
  #- uselessfile.js
