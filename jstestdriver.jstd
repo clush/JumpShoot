@@ -2,8 +2,7 @@ server: http://localhost:4224
 
 load:
   - pong/*.js
-  - lib/jasmine-2.2.0/jasmine.js
-  # lib/jasmine-jstd-adapter/JasmineAdapter.js
+
 test:
   - JSTests/*.js
 
@@ -12,10 +11,6 @@ exclude:
 
 serve:
  #- css/main.css
-
-
-
-
 
 proxy:
  - {matcher: "*", server: "http://localhost/whatever"}
