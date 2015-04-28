@@ -2,16 +2,26 @@ server: http://localhost:4224
 
 load:
   - pong/*.js
+<<<<<<< HEAD
   - lib/jasmine-2.2.0/jasmine.js
+=======
+>>>>>>> origin/master
 
 test:
   - JSTests/*.js
 
 exclude:
+<<<<<<< HEAD
  # - uselessfile.js
 
 serve:
  # - css/main.css
+=======
+ #- uselessfile.js
+
+serve:
+ #- css/main.css
+>>>>>>> origin/master
 
 proxy:
  - {matcher: "*", server: "http://localhost/whatever"}
