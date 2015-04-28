@@ -3,14 +3,23 @@ server: http://localhost:4224
 load:
   - pong/*.js
 
+  - lib/jasmine-2.2.0/jasmine.js
+
+
+
 test:
   - JSTests/*.js
 
 exclude:
- #- uselessfile.js
+
+ # - uselessfile.js
 
 serve:
- #- css/main.css
+ # - css/main.css
+
+ #- uselessfile.js
+
+
 
 proxy:
  - {matcher: "*", server: "http://localhost/whatever"}
