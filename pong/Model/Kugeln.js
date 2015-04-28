@@ -80,8 +80,8 @@ function Kugel(player) {
             Spieler1.livebar.length -= this.damage;
 
             if (Spieler1.livebar.length <= 0) {
-                if (confirm('Spieler 2 gewinnt, erneut spielen?')) {
-                    window.location.replace("../pong/index.html");
+                if (confirm('Spieler 2 gewinnt!!!!!!!!!, erneut spielen?')) {
+                    window.location.replace("../View/index.html");
                 }
                 else {
                     window.location.replace("../index.php");
