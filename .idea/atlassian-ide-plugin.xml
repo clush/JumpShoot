@@ -1,0 +1,14 @@
+<atlassian-ide-plugin>
+  <project-configuration id="1">
+    <servers id="2">
+      <jira id="3">
+        <server-id id="4">0bdcc1a7-c48c-40c3-9331-6621224118ed</server-id>
+        <name>http://jira.it.dh-karlsruhe.de:8080</name>
+        <url>http://jira.it.dh-karlsruhe.de:8080</url>
+        <shared>false</shared>
+        <useSessionCookies>false</useSessionCookies>
+      </jira>
+    </servers>
+    <default-jira-server reference="4" />
+  </project-configuration>
+</atlassian-ide-plugin>
