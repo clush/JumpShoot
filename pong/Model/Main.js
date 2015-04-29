@@ -1,5 +1,13 @@
-Canvas = document.getElementById("Pong");
-ctx = Canvas.getContext("2d");
+
+input = new Input();
+
+addEventListener("keydown", function (event) {
+    input.set(event, true);
+}, false);
+
+addEventListener("keyup", function (event) {
+    input.set(event, false);
+}, false);
 
 width = 800;
 height = 500;
