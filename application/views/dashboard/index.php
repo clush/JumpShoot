@@ -4,7 +4,7 @@
     <!-- echo out the system feedback (error and success messages) -->
     <?php $this->renderFeedbackMessages(); ?>
 
-    <form action="../pong">
+    <form action="../pong/view/">
         <input type="submit" value="PLAY" >
     </form>
 </div>
