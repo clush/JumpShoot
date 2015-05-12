@@ -23,9 +23,11 @@ function action() {
 
     if (input.w) {
         if (!Spieler1.jumped) {
+
             Spieler1.jumpSpeed = Spieler1.jumpheight;
             Spieler1.jumped = true;
             Spieler1.increase = true;
+            springe1();
         }
     }
 
@@ -61,6 +63,7 @@ function action() {
             Spieler2.jumpSpeed = Spieler2.jumpheight;
             Spieler2.jumped = true;
             Spieler2.increase = true;
+            springe2();
         }
     }
 

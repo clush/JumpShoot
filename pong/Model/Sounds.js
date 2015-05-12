@@ -9,3 +9,11 @@ function sound() {
 function treffer() {
     document.getElementById('hit').play();
 }
+
+function springe1(){
+    document.getElementById('jump').play();
+}
+
+function springe2(){
+    document.getElementById('jump2').play();
+}
