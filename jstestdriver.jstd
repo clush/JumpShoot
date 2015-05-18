@@ -1,9 +1,9 @@
-server: http://localhost:4224
+server: http://localhost:9876
 
 load:
-  - pong/*.js
-
-  - lib/jasmine-2.2.0/jasmine.js
+  - lib/jasmine-core/jasmine.js
+  - lib/jasmine-jstd-adapter/src/JasmineAdapter.js
+  - pong/Model/Livebar.js
 
 
 
@@ -12,7 +12,7 @@ test:
 
 exclude:
 
- # - uselessfile.js
+ # - pong/Model/main.js
 
 serve:
  # - css/main.css
