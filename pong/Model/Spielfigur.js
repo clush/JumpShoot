@@ -106,7 +106,7 @@ function Spielfigur(blickrichtung, color) {
             this.kugel3.visible = true;
             this.kugel3.loaded = true;
         }
-        if (this.loadtimer == this.loadtime * (4 / 4)) {
+        if (this.loadtimer == this.loadtime) {
             this.kugel4.visible = true;
             this.kugel4.loaded = true;
             this.kugelnummer = 0;

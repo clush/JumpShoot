@@ -1,4 +1,4 @@
-input = new Input();
+var input = new Input();
 
 addEventListener("keydown", function (event) {
     input.set(event, true);
