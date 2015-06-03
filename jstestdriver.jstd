@@ -4,11 +4,13 @@ load:
   - lib/jasmine-core/jasmine.js
   - lib/jasmine-jstd-adapter/src/JasmineAdapter.js
   - pong/Model/Livebar.js
-
+  - pong/Model/Spielfigur.js
+  - pong/Model/Kugeln.js
+  - pong/Model/Main.js
 
 
 test:
-  - pong/JSTests/*.js
+  - JSTests/*.js
 
 exclude:
 
@@ -18,8 +20,6 @@ serve:
  # - css/main.css
 
  #- uselessfile.js
-
-
 
 proxy:
  - {matcher: "*", server: "http://localhost/whatever"}
