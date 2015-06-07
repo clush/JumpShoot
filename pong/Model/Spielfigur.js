@@ -12,10 +12,7 @@ function Spielfigur(blickrichtung, color) {
 //Objekte
 
     this.livebar = new Livebar(this.player);
-    this.kugel1 = new Kugel(this.player);
-    this.kugel2 = new Kugel(this.player);
-    this.kugel3 = new Kugel(this.player);
-    this.kugel4 = new Kugel(this.player);
+    this.items = new Items(this.player);
 
 //dynamische Attribute
 
@@ -85,30 +82,32 @@ function Spielfigur(blickrichtung, color) {
     }
 
     this.shoot = function () {
-        if (this.kugelnummer >= 1)this.kugel1.fly();
-        if (this.kugelnummer >= 2)this.kugel2.fly();
-        if (this.kugelnummer >= 3)this.kugel3.fly();
-        if (this.kugelnummer >= 4)this.kugel4.fly();
+        if (this.kugelnummer >= 1)this.items.kugel1.fly();
+        if (this.kugelnummer >= 2)this.items.kugel2.fly();
+        if (this.kugelnummer >= 3)this.items.kugel3.fly();
+        if (this.kugelnummer >= 4)this.items.kugel4.fly();
+
+        if (!this.items.granate1.loaded&&this.items.granate1.visible)this.items.granate1.fly();
 
     }
 
     this.load = function () {
         this.loadtimer++;
         if (this.loadtimer == this.loadtime * (1 / 4)) {
-            this.kugel1.visible = true;
-            this.kugel1.loaded = true;
+            this.items.kugel1.visible = true;
+            this.items.kugel1.loaded = true;
         }
         if (this.loadtimer == this.loadtime * (2 / 4)) {
-            this.kugel2.visible = true;
-            this.kugel2.loaded = true;
+            this.items.kugel2.visible = true;
+            this.items.kugel2.loaded = true;
         }
         if (this.loadtimer == this.loadtime * (3 / 4)) {
-            this.kugel3.visible = true;
-            this.kugel3.loaded = true;
+            this.items.kugel3.visible = true;
+            this.items.kugel3.loaded = true;
         }
         if (this.loadtimer == this.loadtime) {
-            this.kugel4.visible = true;
-            this.kugel4.loaded = true;
+            this.items.kugel4.visible = true;
+            this.items.kugel4.loaded = true;
             this.kugelnummer = 0;
             this.loadtimer = 0;
         }
@@ -123,21 +122,28 @@ function Spielfigur(blickrichtung, color) {
         ctx.fillStyle = this.color;
         ctx.fillRect(this.x, this.y, this.playerwidth, this.playerheight);
 
-        if (this.kugel1.loaded) {
+        if (this.items.kugel1.loaded) {
             ctx.fillStyle = "#000000";
             ctx.fillRect(this.x + 5, this.y + 10, 20, 10);
         }
-        if (this.kugel2.loaded) {
+        if (this.items.kugel2.loaded) {
             ctx.fillStyle = "#000000";
             ctx.fillRect(this.x + 5, this.y + 25, 20, 10);
         }
-        if (this.kugel3.loaded) {
+        if (this.items.kugel3.loaded) {
             ctx.fillStyle = "#000000";
             ctx.fillRect(this.x + 5, this.y + 40, 20, 10);
         }
-        if (this.kugel4.loaded) {
+        if (this.items.kugel4.loaded) {
             ctx.fillStyle = "#000000";
             ctx.fillRect(this.x + 5, this.y + 55, 20, 10);
+        }
+        if(this.items.granate1.loaded){
+
+            ctx.beginPath();
+            ctx.arc(this.x + 15, this.y + 72, 4, 0, 2 * Math.PI, false);
+            ctx.fillStyle = 'black';
+            ctx.fill();
         }
     }
 

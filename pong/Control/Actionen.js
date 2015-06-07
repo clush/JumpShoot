@@ -39,14 +39,17 @@ function action() {
             Spieler1.shooting = true;
             Spieler1.keypressed = true;
 
-            if (Spieler1.kugelnummer == 1)Spieler1.kugel1.init();
-            if (Spieler1.kugelnummer == 2)Spieler1.kugel2.init();
-            if (Spieler1.kugelnummer == 3)Spieler1.kugel3.init();
-            if (Spieler1.kugelnummer == 4)Spieler1.kugel4.init();
+            if (Spieler1.kugelnummer == 1)Spieler1.items.kugel1.init();
+            if (Spieler1.kugelnummer == 2)Spieler1.items.kugel2.init();
+            if (Spieler1.kugelnummer == 3)Spieler1.items.kugel3.init();
+            if (Spieler1.kugelnummer == 4)Spieler1.items.kugel4.init();
 
         }
     } else Spieler1.keypressed = false;
 
+    if (input.s){
+        if (Spieler1.items.granate1.loaded)Spieler1.items.granate1.init();
+    }
 
     //Spieler 2
 
@@ -75,13 +78,17 @@ function action() {
             Spieler2.shooting = true;
             Spieler2.keypressed = true;
 
-            if (Spieler2.kugelnummer == 1)Spieler2.kugel1.init();
-            if (Spieler2.kugelnummer == 2)Spieler2.kugel2.init();
-            if (Spieler2.kugelnummer == 3)Spieler2.kugel3.init();
-            if (Spieler2.kugelnummer == 4)Spieler2.kugel4.init();
+            if (Spieler2.kugelnummer == 1)Spieler2.items.kugel1.init();
+            if (Spieler2.kugelnummer == 2)Spieler2.items.kugel2.init();
+            if (Spieler2.kugelnummer == 3)Spieler2.items.kugel3.init();
+            if (Spieler2.kugelnummer == 4)Spieler2.items.kugel4.init();
 
         }
     } else Spieler2.keypressed = false;
+
+    if (input.down){
+        if (Spieler2.items.granate1.loaded)Spieler2.items.granate1.init();
+    }
 
 
 }
