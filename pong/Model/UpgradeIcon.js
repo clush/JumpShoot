@@ -9,10 +9,11 @@ function UpgradeIcon() {
     this.visible = true;
     this.color = "000000";
     this.radius = 10;
-    this.richtung = true;
+
     this.aktive = false;
     this.speed = 2;
     this.timer = 60;
+    this.UpgradeArt = 0;
 
     this.init = function () {
 

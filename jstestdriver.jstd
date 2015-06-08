@@ -6,7 +6,11 @@ load:
   - pong/Model/Livebar.js
   - pong/Model/Spielfigur.js
   - pong/Model/Kugeln.js
+  - pong/Model/Items.js
+  - pong/Model/Granate.js
+  - pong/Model/UpgradeIcon.js
   - pong/Model/Main.js
+
 
 
 test:

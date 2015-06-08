@@ -59,7 +59,7 @@ function Kugel(player) {
             this.y >= Spieler2.y && this.y <= Spieler2.y + Spieler2.playerheight) {
             this.visible = false;
             // window.location.replace("../pong/Spielende1.html");
-            treffer();
+            //treffer();
             Spieler2.livebar.length -= this.damage;
 
             if (Spieler2.livebar.length <= 0) {
@@ -76,7 +76,7 @@ function Kugel(player) {
             this.y >= Spieler1.y && this.y <= Spieler1.y + Spieler1.playerheight) {
             this.visible = false;
             //window.location.replace("../pong/Spielende2.html");
-            treffer();
+            //treffer();
             Spieler1.livebar.length -= this.damage;
 
             if (Spieler1.livebar.length <= 0) {
