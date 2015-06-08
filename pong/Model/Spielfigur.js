@@ -16,7 +16,7 @@ function Spielfigur(blickrichtung, color) {
 
 //dynamische Attribute
 
-    if (blickrichtung)this.x = 40; else this.x = width - (this.playerwidth + 40)
+    if (blickrichtung)this.x = 40; else this.x = width - (this.playerwidth + 40);
     this.y = height - (this.playerheight + 41);
 
     this.jumpSpeed = 0;
@@ -49,7 +49,7 @@ function Spielfigur(blickrichtung, color) {
         } else {
             this.x -= this.speed;
         }
-    }
+    };
 
     this.moveRight = function () {
 
@@ -60,7 +60,7 @@ function Spielfigur(blickrichtung, color) {
         } else {
             this.x += this.speed;
         }
-    }
+    };
 
     this.jump = function () {
 
@@ -79,7 +79,7 @@ function Spielfigur(blickrichtung, color) {
             this.y += this.jumpSpeed;
             this.jumpSpeed++;
         }
-    }
+    };
 
     this.shoot = function () {
         if (this.kugelnummer >= 1)this.items.kugel1.fly();
@@ -89,7 +89,7 @@ function Spielfigur(blickrichtung, color) {
 
         if (!this.items.granate1.loaded&&this.items.granate1.visible)this.items.granate1.fly();
 
-    }
+    };
 
     this.load = function () {
         this.loadtimer++;
@@ -112,7 +112,7 @@ function Spielfigur(blickrichtung, color) {
             this.loadtimer = 0;
         }
 
-    }
+    };
 
     this.draw = function () {
 
@@ -145,7 +145,7 @@ function Spielfigur(blickrichtung, color) {
             ctx.fillStyle = 'black';
             ctx.fill();
         }
-    }
+    };
 
     this.update = function () {
 

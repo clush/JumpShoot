@@ -5,7 +5,7 @@ width = 800;
 height = 500;
 Spieler1 = new Spielfigur(true, "#0000ff");
 Spieler2 = new Spielfigur(false, "#00ff00") //Achtung: Wenn Playerwidth sich ändert muss Anfangsposition geändert werden.
-
+icon = new UpgradeIcon();
 
 setInterval(main, 1000 / 60); //Refreshzyklus
 
@@ -20,6 +20,10 @@ function main() {
 
     Spieler2.update();
     Spieler2.draw();
+
+    icon.upgrade();
+
+
 
 }
 

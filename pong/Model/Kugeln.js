@@ -35,7 +35,7 @@ function Kugel(player) {
             this.y = Spieler2.y + Spieler2.playerheight / 2;
         }
 
-    }
+    };
 
     this.fly = function () {
 
@@ -46,12 +46,12 @@ function Kugel(player) {
             this.draw();
             this.collision();
         }
-    }
+    };
 
     this.draw = function () {
         ctx.fillStyle = this.color;
         ctx.fillRect(this.x, this.y, this.bulletlength, this.bullethight);
-    }
+    };
 
     this.collision = function () {
 

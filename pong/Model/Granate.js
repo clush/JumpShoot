@@ -42,7 +42,7 @@ function Granate (player){
             this.y = Spieler2.y + Spieler2.playerheight / 2;
         }
 
-    }
+    };
 
     this.fly = function () {
 
@@ -69,7 +69,7 @@ function Granate (player){
             this.draw();
             this.collision();
         }
-    }
+    };
 
     this.draw = function () {
         ctx.fillStyle = this.color;
@@ -79,7 +79,7 @@ function Granate (player){
         ctx.fill();
 
         //ctx.fillRect(this.x, this.y, this.bulletlength, this.bullethight);
-    }
+    };
 
     this.collision = function () {
 
@@ -118,7 +118,7 @@ function Granate (player){
             }
         }
 
-    }
+    };
 
     this.explode = function () {
 
