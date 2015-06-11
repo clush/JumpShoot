@@ -11,8 +11,6 @@ load:
   - pong/Model/UpgradeIcon.js
   - pong/Model/Main.js
 
-
-
 test:
   - JSTests/*.js
 

@@ -8,8 +8,8 @@ function Granate (player){
     this.visible = true;
     this.color = "#000000";
     this.player = player;
-    this.bulletlength = 20;
-    this.bullethight = 5;
+    this.radius = 5;
+
     this.richtung = true;
     this.loaded = true;
     this.speed = 15;
@@ -29,7 +29,7 @@ function Granate (player){
             this.richtung = Spieler1.blickrichtung;
 
             if (this.richtung)this.x = Spieler1.x + Spieler1.playerwidth + 1;
-            else this.x = Spieler1.x - (this.bulletlength + 1);
+            else this.x = Spieler1.x - (this.radius + 1);
 
             this.y = Spieler1.y + Spieler1.playerheight / 2;
         }
@@ -37,7 +37,7 @@ function Granate (player){
             this.richtung = Spieler2.blickrichtung;
 
             if (this.richtung)this.x = Spieler2.x + Spieler2.playerwidth + 1;
-            else this.x = Spieler2.x - (this.bulletlength + 1);
+            else this.x = Spieler2.x - (this.radius + 1);
 
             this.y = Spieler2.y + Spieler2.playerheight / 2;
         }
@@ -74,17 +74,17 @@ function Granate (player){
     this.draw = function () {
         ctx.fillStyle = this.color;
         ctx.beginPath();
-        ctx.arc(this.x, this.y, 5, 0, 2 * Math.PI, false);
+        ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
         ctx.fillStyle = 'green';
         ctx.fill();
 
-        //ctx.fillRect(this.x, this.y, this.bulletlength, this.bullethight);
+        //ctx.fillRect(this.x, this.y, this.radius, this.radius);
     };
 
     this.collision = function () {
 
-        if ((this.x >= Spieler2.x || this.x + this.bulletlength >= Spieler2.x) && (this.x <= Spieler2.x + Spieler2.playerwidth || this.x + this.bulletlength <= Spieler2.playerwidth) &&
-            this.y >= Spieler2.y && this.y <= Spieler2.y + Spieler2.playerheight) {
+        if ((this.x - this.radius >= Spieler2.x || this.x + this.radius >= Spieler2.x) && (this.x - this.radius <= Spieler2.x + Spieler2.playerwidth || this.x + this.radius <= Spieler2.x + Spieler2.playerwidth) &&
+            (this.y - this.radius >= Spieler2.y || this.y + this.radius >= Spieler2.y) && (this.y - this.radius <= Spieler2.y + Spieler2.playerheight || this.y + this.radius <= Spieler2.y + Spieler2.playerheight)) {
             this.visible = false;
             // window.location.replace("../pong/Spielende1.html");
             treffer();
@@ -100,8 +100,8 @@ function Granate (player){
             }
         }
 
-        if ((this.x >= Spieler1.x || this.x + this.bulletlength >= Spieler1.x) && (this.x <= Spieler1.x + Spieler1.playerwidth || this.x + this.bulletlength <= Spieler1.playerwidth) &&
-            this.y >= Spieler1.y && this.y <= Spieler1.y + Spieler1.playerheight) {
+        if ((this.x - this.radius >= Spieler1.x || this.x + this.radius >= Spieler1.x) && (this.x - this.radius <= Spieler1.x + Spieler2.playerwidth || this.x + this.radius <= Spieler1.x + Spieler1.playerwidth) &&
+            (this.y - this.radius >= Spieler1.y || this.y + this.radius >= Spieler1.y) && (this.y - this.radius <= Spieler1.y + Spieler2.playerheight || this.y + this.radius <= Spieler1.y + Spieler1.playerheight)) {
             this.visible = false;
             //window.location.replace("../pong/Spielende2.html");
             treffer();

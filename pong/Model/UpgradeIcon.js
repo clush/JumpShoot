@@ -8,7 +8,7 @@ function UpgradeIcon() {
     this.y = 0;
     this.visible = true;
     this.color = "000000";
-    this.radius = 10;
+    this.radius = 20;
 
     this.aktive = false;
     this.speed = 2;
@@ -33,8 +33,8 @@ function UpgradeIcon() {
         }else{
             this.timer--;
             if(this.timer<=0){
-                this.init();
                 this.timer=60;
+                this.init();
             }
         }
     };
@@ -43,10 +43,9 @@ function UpgradeIcon() {
 
         this.y += this.speed;
 
-        if (this.visible) {
-            this.draw();
-            this.collision();
-        }
+        this.draw();
+        this.collision();
+
     };
 
     this.draw = function () {
@@ -58,8 +57,8 @@ function UpgradeIcon() {
 
     this.collision = function () {
 
-        if ((this.x >= Spieler2.x || this.x + this.bulletlength >= Spieler2.x) && (this.x <= Spieler2.x + Spieler2.playerwidth || this.x + this.bulletlength <= Spieler2.playerwidth) &&
-            this.y >= Spieler2.y && this.y <= Spieler2.y + Spieler2.playerheight) {
+        if ((this.x - this.radius >= Spieler2.x || this.x + this.radius >= Spieler2.x) && (this.x - this.radius <= Spieler2.x + Spieler2.playerwidth || this.x + this.radius <= Spieler2.x + Spieler2.playerwidth) &&
+            (this.y - this.radius >= Spieler2.y || this.y + this.radius >= Spieler2.y) && (this.y - this.radius <= Spieler2.y + Spieler2.playerheight || this.y + this.radius <= Spieler2.y + Spieler2.playerheight)) {
             this.visible = false;
 
             Spieler1.playerheight = 160;
@@ -67,8 +66,8 @@ function UpgradeIcon() {
             this.aktive = false;
         }
 
-        if ((this.x >= Spieler1.x || this.x + this.bulletlength >= Spieler1.x) && (this.x <= Spieler1.x + Spieler1.playerwidth || this.x + this.bulletlength <= Spieler1.playerwidth) &&
-            this.y >= Spieler1.y && this.y <= Spieler1.y + Spieler1.playerheight) {
+        if ((this.x - this.radius >= Spieler1.x || this.x + this.radius >= Spieler1.x) && (this.x - this.radius <= Spieler1.x + Spieler2.playerwidth || this.x + this.radius <= Spieler1.x + Spieler1.playerwidth) &&
+            (this.y - this.radius >= Spieler1.y || this.y + this.radius >= Spieler1.y) && (this.y - this.radius <= Spieler1.y + Spieler2.playerheight || this.y + this.radius <= Spieler1.y + Spieler1.playerheight)) {
             this.visible = false;
 
             Spieler2.playerheight = 160;
