@@ -21,7 +21,7 @@ function main() {
     Spieler2.update();
     Spieler2.draw();
 
-    icon.upgrade();
+    icon.update();
 
 
 

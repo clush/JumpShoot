@@ -24,6 +24,8 @@ function Granate (player){
         sound();
         this.color = "#ff0000";
         this.loaded = false;
+        this.ySpeed = this.height;
+        this.increase = true;
 
         if (this.player) { //true=Spieler1 false=Spieler2
             this.richtung = Spieler1.blickrichtung;

@@ -12,28 +12,33 @@ function UpgradeIcon() {
 
     this.aktive = false;
     this.speed = 2;
-    this.timer = 60;
-    this.UpgradeArt = 0;
+    this.timer=Math.round(Math.random()*(600))+200;
+    this.upgradeArt;
 
     this.init = function () {
 
-        this.color = "red";
+        this.timer=Math.round(Math.random()*(600))+200;
         this.aktive = true;
 
         this.y = this.radius;
 
         this.x =  Math.round(Math.random()*(width-this.radius))+this.radius;
+        this.upgradeArt = Math.round(Math.random()*2);
+
+        if(this.upgradeArt==0)this.color = 'red';
+        else if (this.upgradeArt==1)this.color= 'green';
+        else if (this.upgradeArt==2)this.color='blue';
 
     };
 
-    this.upgrade = function(){
+    this.update = function(){
 
         if(this.aktive){
             this.fly();
         }else{
             this.timer--;
             if(this.timer<=0){
-                this.timer=60;
+
                 this.init();
             }
         }
@@ -51,7 +56,7 @@ function UpgradeIcon() {
     this.draw = function () {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
-        ctx.fillStyle = 'red';
+        ctx.fillStyle = this.color;
         ctx.fill();
     };
 
@@ -59,23 +64,47 @@ function UpgradeIcon() {
 
         if ((this.x - this.radius >= Spieler2.x || this.x + this.radius >= Spieler2.x) && (this.x - this.radius <= Spieler2.x + Spieler2.playerwidth || this.x + this.radius <= Spieler2.x + Spieler2.playerwidth) &&
             (this.y - this.radius >= Spieler2.y || this.y + this.radius >= Spieler2.y) && (this.y - this.radius <= Spieler2.y + Spieler2.playerheight || this.y + this.radius <= Spieler2.y + Spieler2.playerheight)) {
-            this.visible = false;
 
-            Spieler1.playerheight = 160;
-            Spieler1.y = height - (Spieler1.playerheight + 41);
+            this.upgrade(Spieler2);
             this.aktive = false;
         }
 
         if ((this.x - this.radius >= Spieler1.x || this.x + this.radius >= Spieler1.x) && (this.x - this.radius <= Spieler1.x + Spieler2.playerwidth || this.x + this.radius <= Spieler1.x + Spieler1.playerwidth) &&
             (this.y - this.radius >= Spieler1.y || this.y + this.radius >= Spieler1.y) && (this.y - this.radius <= Spieler1.y + Spieler2.playerheight || this.y + this.radius <= Spieler1.y + Spieler1.playerheight)) {
-            this.visible = false;
 
-            Spieler2.playerheight = 160;
-            Spieler2.y = height - (Spieler2.playerheight + 41);
+            this.upgrade(Spieler1);
+            this.aktive = false;
+        }
+
+
+        if((this.y + this.radius) >= (height - 41)){
+            //this.visible = false;
             this.aktive = false;
         }
 
     }
 
+    this.upgrade = function(player){
+        if(this.upgradeArt == 0){
+            if(player == Spieler1){
+                Spieler2.playerheight = 160;
+                Spieler2.y = height - (Spieler2.playerheight + 41);
+            }else{
+                Spieler1.playerheight = 160;
+                Spieler1.y = height - (Spieler1.playerheight + 41);
+            }
+        }
+        else if(this.upgradeArt == 1){
+            player.playerheight = 80;
+            if(!player.jumped)
+            {
+                player.y = height - (Spieler2.playerheight + 41);
+            }
+        }
+        else if(this.upgradeArt == 2){
+            player.items.granate1.loaded = true;
+            player.items.granate1.visible = true;
+        }
+    }
 
 }
