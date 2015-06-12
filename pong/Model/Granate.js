@@ -124,7 +124,7 @@ function Granate (player){
 
     this.explode = function () {
 
-        if ((this.x + 100 >= Spieler2.x && this.x - 100 <= Spieler2.x)) {
+        if ((this.x + 100 >= Spieler2.x && this.x - 100 <= Spieler2.x)||(this.x + 100 >= Spieler2.x + Spieler2.playerwidth && this.x - 100 <= Spieler2.x + Spieler2.playerwidth)) {
 
             // window.location.replace("../pong/Spielende1.html");
             treffer();
@@ -140,7 +140,7 @@ function Granate (player){
             }
         }
 
-        if ((this.x + 100 >= Spieler1.x && this.x - 100 <= Spieler1.x)){
+        if ((this.x + 100 >= Spieler1.x && this.x - 100 <= Spieler1.x)||(this.x + 100 >= Spieler1.x + Spieler1.playerwidth && this.x - 100 <= Spieler1.x + Spieler1.playerwidth)){
 
             //window.location.replace("../pong/Spielende2.html");
             treffer();
